@@ -40,3 +40,7 @@ form{
 .maindiv input{
     vertical-align:middle;
 }
+
+.highlight{
+    background-color:yellow;
+}

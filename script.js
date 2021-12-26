@@ -4,6 +4,7 @@ function compute()
     let eamount = document.getElementById("principal").value;
     if (eamount <= 0){
         alert("Amount must be greater than 0.");
+        document.getElementById("principal").focus();
         return false;
     }
     //display principal
@@ -21,7 +22,7 @@ function compute()
     document.getElementById('ryear').innerHTML = fyear;
 
     //calclate interest
-    var einterest = "$" + ((parseInt(eprincipal) * (parseFloat(erate)/100) * parseInt(eyears))+parseInt(eprincipal));
+    var einterest = "$" + (parseInt(eprincipal) * (parseFloat(erate)/100) * parseInt(eyears));
     document.getElementById("ramount").innerHTML = einterest;
 
     //show results div

@@ -15,7 +15,7 @@
                 <input type="number" id="principal" value="0">
                 <br>
                 <label for="rate">Interest Rate</label>
-                <input type="range" id="rate" min="1" max="25" value="10.5" step="0.1" 
+                <input type="range" id="rate" min="1" max="20" value="10.5" step="0.1" 
                        oninput="document.getElementById('rateslider').innerHTML=this.value"/> 
                 <label id="rateslider">10.5</label>
                 <br>
@@ -59,16 +59,16 @@
             </div>
             <div class="subdiv" id="result" hidden>
                 <label for="rprincipal">If you deposit </label>
-                <label id="rprincipal"></label>
+                <label class="highlight" id="rprincipal"></label>
                 <br>
                 <label for="rrate">at an interest rate of </label>
-                <label id="rrate"></label>
+                <label class="highlight" id="rrate"></label>
                 <br>
-                <label for="ramount">You will receive an amount of </label>
-                <label id="ramount"></label>
+                <label for="ramount">You will earn in interest  </label>
+                <label class="highlight" id="ramount"></label>
                 <br>
-                <label for="ryear">in the year </label>
-                <text id="ryear"></text>
+                <label for="ryear">by the year </label>
+                <label class="highlight" id="ryear"></label>
                 <br>
             </div>
             <p>&#169 Everyone Can Get Rich</p>
